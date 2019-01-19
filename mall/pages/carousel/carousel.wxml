@@ -1,0 +1,26 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<view class="carousel">
+  <view class="swiper-container"> 
+          <swiper 
+          indicator-dots="{{indicatorDots}}" 
+          autoplay="{{autoplay}}" 
+          interval="{{interval}}" 
+          duration="{{duration}}" 
+          circular="{{duration}}" 
+          current="{{swiperCurrent}}" 
+          bindchange="swiperChange" 
+          class="swiper">  
+              <block 
+              wx:for="{{imgUrls}}" 
+              wx:key="unique">     
+                    <swiper-item>        
+                        <image src="{{item}}" 
+                        class="img" 
+                        bindtap="swipclick" />                            
+                    </swiper-item>    
+              </block>  
+        </swiper>
+    </view>
+    <slot></slot>
+</view>
+    
