@@ -4,6 +4,10 @@ const app = getApp()
 
 Page({
   data: {
+    //轮播数据
+    car_array: [],
+    //列表数据
+    item_array: [],
     motto: 'Hello World',
     userInfo: {},
     hasUserInfo: false,
@@ -21,6 +25,35 @@ Page({
     })
   },
   onLoad: function () {
+    var that = this;
+    //请求轮播数据
+    let carurl = app.globalData.URL + 'indexbanner';
+    app.wxRequest('POST', carurl, null, (res) => {
+      console.log(res.data);
+      that.setData({
+        car_array:res.data
+      })
+    }, (err) => {
+      console.log(err);
+    });
+
+    //请求列表数据
+    let url = app.globalData.URL + 'goods';
+    let data = {
+      type: '4'
+    };
+    app.wxRequest('POST', url, data, (res) => {
+      console.log(res.data);
+      that.setData({
+        item_array : res.data
+      })
+    }, (err) => {
+      console.log(err);
+    });
+
+ 
+
+
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,

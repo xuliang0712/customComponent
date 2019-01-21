@@ -14,7 +14,7 @@
               wx:for="{{imgUrls}}" 
               wx:key="unique">     
                     <swiper-item>        
-                        <image src="{{item}}" 
+                        <image src="{{item.b_img}}" 
                         class="img" 
                         bindtap="swipclick" />                            
                     </swiper-item>    

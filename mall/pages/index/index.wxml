@@ -1,17 +1,32 @@
 <!--index.wxml-->
-<!-- 声明需要使用的模板文件 -->
-<!-- <import src ="../template/template.wxml"/>
-　　<view>This is index.wxml</view>
-    <text class="template_age_style"> age: {{age}}</text>
-<template is="msgItem" data="{{index:1,msg1:'msg1数据',msg2:'msg2数据'}}"/> -->
-
-<!-- 自定义组件 -->
+<!-- 轮播自定义组件 -->
 <view>
-  <carousel>
-    <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
-     <!-- <view>这里是插入到组件slot中的内容</view>  -->
-  </carousel>
+  <carousel imgUrls="{{car_array}}"></carousel>
 </view>
+
+<!-- 菜单按钮 -->
+<view>
+  <view></view>
+</view>
+
+
+<!-- 底部滚动 -->
+<scroll-view class='scroll_view'
+    scroll-y
+    bindscrolltoupper="upper"
+    bindscrolltolower="lower"
+    bindscroll="scroll"
+    scroll-into-view="{{toView}}"
+    scroll-top="{{scrollTop}}"
+  >
+    <!-- 自定义cell -->
+    <view wx:for="{{item_array}}" wx:key="index" wx:for-item="item">
+      <homeItem model="{{item}}"></homeItem>
+    </view>
+    
+</scroll-view>
+
+
 
 
 <view class="container">

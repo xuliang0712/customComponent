@@ -1,0 +1,41 @@
+/**homeItem.wxss**/
+.homeItem{
+  height: auto;
+  background-color: white;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+image{
+  background-color: #ccc;
+  width: 100%;
+  height: 120px;
+}
+.bottom{
+  font-size: 15px;
+  color: rgb(187, 187, 187);
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.price{
+  float: left;
+  width: auto;
+  height: 35px;
+  line-height: 35px;
+  color: red;
+  font-size: 20px;
+}
+.btn{
+  float: right;
+  width: 70px;
+  height: 25px;
+  font-size: 13px;
+  line-height: 25px;
+  color: coral;
+  border: 1px solid coral;
+  border-radius: 20px;
+  text-align: center;
+}
+.clear{
+  clear: both;
+}

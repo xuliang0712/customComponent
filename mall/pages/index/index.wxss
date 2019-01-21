@@ -1,5 +1,15 @@
 /**index.wxss**/
-@import "../template/template.wxss";
+.scroll_view{
+  position: relative;
+  width: 96%;
+  height:auto;
+  margin: 0 2%;
+  background-color: white;
+}
+
+
+
+
 .userinfo {
   display: flex;
   flex-direction: column;

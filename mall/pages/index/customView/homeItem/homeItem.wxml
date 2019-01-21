@@ -1,0 +1,12 @@
+<!-- 组件模板 -->
+<view class="homeItem">
+  <image src='{{model.g_feng}}'></image>
+  <view class='bottom'>
+    <view>{{model.g_title}}</view>
+    <view>{{model.g_simple}}</view>
+    <view class='price'>￥{{model.g_new_price}}</view>
+    <view class='btn'>立即抢购</view>
+    <view class='clear'></view>
+  </view>
+  <slot></slot>
+</view>

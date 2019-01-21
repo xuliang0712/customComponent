@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "my-component": "/pages/component/component",
-    "carousel": "/pages/carousel/carousel"
+    "carousel": "/pages/components/carousel/carousel",
+    "homeItem":"./customView/homeItem/homeItem"
   }
 }
