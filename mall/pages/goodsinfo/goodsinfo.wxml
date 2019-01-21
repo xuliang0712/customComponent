@@ -1,0 +1,22 @@
+<!--goodsinfo.wxml-->
+<import src="../../wxParse/wxParse.wxml"/> 
+
+<!-- 轮播自定义组件 -->
+<carousel imgUrls="{{model.g_banner}}"></carousel>
+<view class='head'>
+  <view class='head_new_price'>￥{{model.g_new_price}}</view>
+  <view class='head_price'>价格：￥{{model.g_price}}</view>
+  <view class='head_title'>{{model.g_title}}</view>
+  <view class='head_left'>运费:￥{{moel.g_kuaidi}}</view>
+  <view class='head_right'>库存{{model.goods_num}}</view>
+  <view class='clear'></view>
+</view>
+
+
+<view class='content'>
+  <view class='content_title'>商品详情</view>
+  <!-- 加载html标签 -->
+  <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+  </view>
+</view>

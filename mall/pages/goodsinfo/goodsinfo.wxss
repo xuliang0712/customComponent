@@ -1,0 +1,47 @@
+.head{
+  margin: 0 10px 0 10px;
+  border-bottom: 1px solid rgb(240, 240, 240);
+  font-size: 13px;
+  color: #ccc;
+}
+
+.head_new_price{
+  color: red;
+  font-size: 20px;
+}
+
+.head_price{
+  text-decoration:line-through;
+}
+
+.head_title{
+  height: 40px;
+  line-height: 40px;
+  color:black;
+  font-size: 16px;
+}
+
+.head_left{
+  line-height: 30px;
+  float: left;
+}
+
+.head_right{
+  line-height: 30px;
+  float: right;
+}
+
+.clear{
+  clear: both;
+}
+
+.content_title{
+  text-align: center;
+  line-height: 40px;
+  font-size: 15px;
+}
+
+.wxParse{
+  height: auto;
+  margin: 0 5px 0 5px;
+}

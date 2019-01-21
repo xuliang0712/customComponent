@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <!-- 轮播自定义组件 -->
 <view>
-  <carousel imgUrls="{{car_array}}"></carousel>
+  <carousel imgUrls="{{image_array}}"></carousel>
 </view>
 
 <!-- 菜单按钮 -->
@@ -21,7 +21,7 @@
   >
     <!-- 自定义cell -->
     <view wx:for="{{item_array}}" wx:key="index" wx:for-item="item">
-      <homeItem model="{{item}}"></homeItem>
+      <homeItem model="{{item}}" bindtap="bindListItemViewTap" data-g_id="{{item.g_id}}"></homeItem>
     </view>
     
 </scroll-view>

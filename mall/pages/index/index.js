@@ -6,6 +6,7 @@ Page({
   data: {
     //轮播数据
     car_array: [],
+    image_array:[],
     //列表数据
     item_array: [],
     motto: 'Hello World',
@@ -24,14 +25,25 @@ Page({
       url: '../carousel/carousel'
     })
   },
+  bindListItemViewTap: function (event){
+    var g_id = event.currentTarget.dataset['g_id'];
+    console.log(g_id);
+    wx.navigateTo({
+      url: '../goodsinfo/goodsinfo?g_id='+g_id,
+    })
+  },
   onLoad: function () {
     var that = this;
     //请求轮播数据
     let carurl = app.globalData.URL + 'indexbanner';
     app.wxRequest('POST', carurl, null, (res) => {
-      console.log(res.data);
+      var images = new Array();
+      for (var i = 0; i < res.data.length; i++) {
+        images.push(res.data[i].b_img);
+      }
       that.setData({
-        car_array:res.data
+        car_array:res.data,
+        image_array:images
       })
     }, (err) => {
       console.log(err);

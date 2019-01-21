@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "首页",
   "usingComponents": {
     "carousel": "/pages/components/carousel/carousel",
     "homeItem":"./customView/homeItem/homeItem"
