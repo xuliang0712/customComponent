@@ -1,0 +1,62 @@
+.choose{
+  width: 100%;
+  height: 100%;
+  bottom:50px;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.good_info{
+  position: fixed;
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  bottom: 50px;
+}
+
+.g_feng{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  margin-top: -30px;
+  margin-left: 10px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 4px;
+  display: block;
+}
+
+
+.price{
+  position: relative;
+  clear: both;
+  margin-top: 60px;
+  color: red;
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 10px;
+}
+
+.new_price{
+  float: left;
+  font-size: 20px;
+}
+
+.old_price{
+  margin-left: 10px;
+  float: left;
+  font-size: 13px;
+  color: rgb(187, 187, 187);
+  text-decoration:line-through;
+}
+
+.clear{
+  clear: both;
+}
+
+
+.title{
+  font-size: 18px;
+  margin-left: 10px;
+
+}

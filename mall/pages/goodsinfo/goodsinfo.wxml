@@ -20,3 +20,10 @@
       <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
   </view>
 </view>
+
+
+<choose class="choose" model="{{model}}"></choose>
+
+<view class='bottom'>
+  <selectbottom></selectbottom>
+</view>

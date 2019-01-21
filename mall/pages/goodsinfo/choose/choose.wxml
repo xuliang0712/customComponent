@@ -1,0 +1,20 @@
+<view class='choose'>
+  <view class='bg_white'>
+    <view class='good_info'>
+      <image class='g_feng' src='{{model.g_feng}}'></image>
+      <view class='price'>
+        <view class='new_price'>￥{{model.g_new_price}}</view>
+        <view class='old_price'>价格:{{model.g_price}}</view>
+      </view>
+      <view class='clear'></view>
+      <view class='title'>{{model.g_title}}</view>
+      <view class=''>
+        <view>运费￥{{model.g_kuaidi}}</view>
+        <view>库存{{model.goods_num}}</view>
+      </view>
+    </view>
+    <view class='select_num'>
+      <view>请选择购买数量</view>
+    </view>
+  </view>
+</view>

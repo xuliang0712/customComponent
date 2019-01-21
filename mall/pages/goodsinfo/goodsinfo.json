@@ -1,6 +1,8 @@
 {
   "navigationBarTitleText": "商品详情",
   "usingComponents": {
-    "carousel": "/pages/components/carousel/carousel"
+    "carousel": "/pages/components/carousel/carousel",
+    "selectbottom":"/pages/goodsinfo/selectbottom/selectbottom",
+    "choose": "/pages/goodsinfo/choose/choose"
   }
 }
