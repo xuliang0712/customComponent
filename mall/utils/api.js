@@ -1,7 +1,4 @@
 // 加载配置文件
-const config = require('../config.js');
-
-
 
 // /**
 //   * 封装wx.request请求

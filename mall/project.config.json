@@ -10,8 +10,8 @@
 		"minified": true,
 		"newFeature": true
 	},
-	"compileType": "miniprogram",
-	"libVersion": "2.2.5",
+	"compileType": "plugin",
+	"libVersion": "2.5.1",
 	"appid": "wx10abbcda43604d98",
 	"projectname": "mall",
 	"debugOptions": {

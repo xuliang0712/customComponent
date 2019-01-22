@@ -1,20 +1,41 @@
 <view class='choose'>
   <view class='bg_white'>
+
     <view class='good_info'>
+
+      <!-- 商品图片 -->
       <image class='g_feng' src='{{model.g_feng}}'></image>
+
+      <!-- 价格 -->
       <view class='price'>
         <view class='new_price'>￥{{model.g_new_price}}</view>
         <view class='old_price'>价格:{{model.g_price}}</view>
       </view>
       <view class='clear'></view>
+
+      <!-- 标题 -->
       <view class='title'>{{model.g_title}}</view>
-      <view class=''>
-        <view>运费￥{{model.g_kuaidi}}</view>
-        <view>库存{{model.goods_num}}</view>
+
+      <!-- 运费 库存 -->
+      <view class='fee_num'>
+        <view class='left'>运费￥{{model.g_kuaidi}}</view>
+        <view class='right'>库存{{model.goods_num}}</view>
       </view>
+      <view class='clear'></view>
+
+      <!-- 选择数量 -->
+      <view class='select_num'>
+        <view class='left'>请选择购买数量</view>
+        <view class='right'>
+          <image class='right' src='../../../utils/images/add.png'></image>
+          <input type='number' class='right text_input' value='1'></input>
+          <image class='right' src='../../../utils/images/sub.png'></image>
+        </view>
+      </view> 
+      <view class='clear'></view>
+
     </view>
-    <view class='select_num'>
-      <view>请选择购买数量</view>
-    </view>
+
   </view>
+
 </view>

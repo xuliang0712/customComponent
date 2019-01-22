@@ -56,7 +56,37 @@
 
 
 .title{
-  font-size: 18px;
+  font-size: 16px;
   margin-left: 10px;
+  line-height: 40px;
+}
 
+.fee_num{
+  margin: 0 10px 0 10px;
+  font-size: 13px;
+  line-height: 30px;
+  color: rgb(187, 187, 187);
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.select_num{
+    border-top: 1px solid rgb(240, 240, 240);
+    margin: 0 10px 0 10px;
+    font-size: 16px;
+    line-height: 40px;
+}
+
+.text_input{
+  margin: 0 5px 0 5px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
 }

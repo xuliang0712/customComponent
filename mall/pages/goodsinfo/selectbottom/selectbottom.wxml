@@ -1,17 +1,17 @@
 <!-- selectbottom.wxml -->
 <view class='bottom'>
   <view class='left'>
-    <button class='btn'>
+    <button class='btn' bindtap='btn_on_click' data-index="1">
       <image src='../../../utils/images/service.png'></image>
       <view class='text'>客服</view>
     </button>
-    <button class='btn'>
+    <button class='btn' bindtap='btn_on_click' data-index="2">
       <image src='../../../utils/images/share.png'></image>
       <view class='text'>分享</view>
     </button>
   </view>
  <view class='right'>
-  <view class='addsame addpay'>立即购买</view>
-  <view class='addsame addcart'>加入购物车</view>
+  <view class='addsame addpay' bindtap='btn_on_click' data-index="3">立即购买</view>
+  <view class='addsame addcart' bindtap='btn_on_click' data-index="4">加入购物车</view>
  </view>
 </view>
