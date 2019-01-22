@@ -1,4 +1,4 @@
-<view class='choose'>
+<view class='choose' hidden='{{!isShow}}' animation="{{choose_anim}}" bindtap='hidePopUp'>
   <view class='bg_white'>
 
     <view class='good_info'>

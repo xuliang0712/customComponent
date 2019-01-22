@@ -11,7 +11,7 @@
     </button>
   </view>
  <view class='right'>
-  <view class='addsame addpay' bindtap='btn_on_click' data-index="3">立即购买</view>
-  <view class='addsame addcart' bindtap='btn_on_click' data-index="4">加入购物车</view>
+  <view class='addsame addpay' bindtap='btn_on_click' data-index="3" data-select="{{flase}}">立即购买</view>
+  <view class='addsame addcart' bindtap='btn_on_click' data-index="4" data-select="{{flase}}">加入购物车</view>
  </view>
 </view>

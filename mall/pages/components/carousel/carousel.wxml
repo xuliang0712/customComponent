@@ -16,7 +16,7 @@
                     <swiper-item>        
                         <image src="{{item}}" 
                         class="img" 
-                        bindtap="swipclick" />                            
+                        bindtap="swipclick" />                        
                     </swiper-item>    
               </block>  
         </swiper>

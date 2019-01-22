@@ -10,12 +10,13 @@ Page({
     g_id:'',
     model:{},
     chooseSize: false,
-    animationData: {}
+    choose:Object
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    //请求参数 商品id 获取
     this.g_id = options.g_id;
     //请求列表数据
     let that = this;
@@ -35,11 +36,13 @@ Page({
   },
   //底部选择按钮点击事件
   selectBottomOnClick:function(event){
+    //隐藏规格选择
+    this.choose.hidePopUp();
     var index = event.detail.val;
+    var select = event.detail.select;
     switch (parseInt(index)){
       case 1:
       {
-          this.chooseSize = false;
           //客服
           console.log("客服");
       }
@@ -53,12 +56,22 @@ Page({
       case 3:
       {
           //立即购买
+          select = !select;
+          if(select){
+            this.choose.showPopUp();
+            select = !select;
+          }
           console.log("立即购买");
       }
         break;
       case 4:
       {
           //加入购物车
+          select = !select;
+          if (select) {
+            this.choose.showPopUp();
+            select = !select;
+          }
           console.log("加入购物车");
       }
         break;
@@ -66,50 +79,20 @@ Page({
       break;
     } 
   },
-  //选择规格动画
-  chooseSezi: function (e) {
-    // 用that取代this，防止不必要的情况发生
-    var that = this;
-    // 创建一个动画实例
-    var animation = wx.createAnimation({
-      // 动画持续时间
-      duration: 500,
-      // 定义动画效果，当前是匀速
-      timingFunction: 'linear'
-    })
-    // 将该变量赋值给当前动画
-    that.animation = animation
-    // 先在y轴偏移，然后用step()完成一个动画
-    animation.translateY(400).step()
-    // 用setData改变当前动画
-    that.setData({
-      // 通过export()方法导出数据
-      animationData: animation.export(),
-      // 改变view里面的Wx：if
-      chooseSize: true
-    })
-    // 设置setTimeout来改变y轴偏移量，实现有感觉的滑动
-    setTimeout(function () {
-      animation.translateY(0).step()
-      that.setData({
-        animationData: animation.export()
-      })
-    }, 300)
-  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
-  onReady: function() {
-    
+  onReady: function (options) {
+    console.log(this, 'this')
+    //获得choose组件
+    this.choose = this.selectComponent(".choose"); //组件的class
   },
-
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
     
   },
-
   /**
    * 生命周期函数--监听页面隐藏
    */

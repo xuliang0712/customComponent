@@ -23,16 +23,14 @@
 
 
 <choose 
-class="choose" 
-wx:if="{{chooseSize}}" 
-model="{{model}}">
+class="choose"
+model="{{model}}"
+>
 </choose>
 
 <view class='bottom'>
   <selectbottom 
   bind:select_btn_onclick_event="selectBottomOnClick"
-  bindtap="chooseSezi" 
-  animation="{{animationData}}" 
   >
-  </selectbottom>
+</selectbottom>
 </view>

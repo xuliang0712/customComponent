@@ -1,6 +1,6 @@
 <!-- 组件模板 -->
 <view class="homeItem">
-  <image src='{{model.g_feng}}'></image>
+  <image src="{{model.g_feng?model.g_feng:'../../../utils/images/default_row_list.png'}}"></image>
   <view class='bottom'>
     <view>{{model.g_title}}</view>
     <view>{{model.g_simple}}</view>
