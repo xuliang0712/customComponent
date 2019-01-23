@@ -1,0 +1,28 @@
+<view>
+  <cartItem 
+  wx:for="{{dataArr}}" 
+  wx:key="{{index}}" 
+  wx:item="{{item}}"
+  model = "{{item}}"
+  id="index{{index}}"
+  data-index = "{{index}}"
+  >
+  </cartItem>
+
+  <view class='cart_bottom_view'>
+      <!-- 选择按钮 -->
+      <view class='select_view' bindtap='select_all_btn'>
+        <image 
+        class='select_btn' 
+        src="{{isallselect?'../../utils/images/sel_select.png':'../../utils/images/def_select.png'}}">
+        </image>
+        <view class='all_title'>全选</view>
+      </view>
+
+      <view class='right_view'>
+        <view class='settlement_title'>合计：￥124</view>
+        <view class='settlement_btn'>结算</view>
+      </view>
+  </view>
+
+</view>

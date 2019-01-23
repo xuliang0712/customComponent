@@ -1,0 +1,49 @@
+<view class='cart_item'>
+
+  <view class='cart_image_view'>
+    <view class='cart_left_view'>
+      <!-- 选择按钮 -->
+      <view class='select_view'>
+        <image 
+        bindtap='select_btn_onclick' 
+        class='select_btn' 
+        src="{{isselect?'../../../utils/images/sel_select.png':'../../../utils/images/def_select.png'}}">
+        </image>
+      </view>
+    </view>
+
+    <view class='cart_center_view'>
+      <!-- 图片 -->
+      <image class='good_pic' src="{{model.goods_feng}}" mode='aspectFit'></image>
+    </view>
+  </view>
+
+
+  <view class='cart_right_view'>
+      <!-- 标题 --> 
+      <view class='good_title'>{{model.goods_title}}</view>
+
+      <!-- 价格 -->
+      <view>
+        <view class='left good_new_price'>￥{{model.goods_new_price}}</view>
+        <view class='left good_old_price'>价格:{{model.goods_old_price}}</view>
+      </view>
+
+      <!-- 数量 -->
+      <view class='clear'></view>
+      <view class='good_num_view'>
+        <view class='right'>
+              <image class='right good_num_size' src='../../../utils/images/add.png'></image>
+              <input type='number' class='right text_input' value='{{model.goods_num}}'></input>
+              <image class='right good_num_size' src='../../../utils/images/sub.png'></image>
+        </view>
+        <view class='left good_num_title'>购买数量</view>
+      </view>
+      <view class='clear'></view> 
+
+  </view>
+
+  <view class='clear'></view>
+
+</view>
+

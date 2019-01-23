@@ -18,6 +18,7 @@ Component({
     //公有方法
     //显示弹窗
     showPopUp(){
+      // console.log("啊哈哈哈");
       this.setData({
         isShow: true
       })

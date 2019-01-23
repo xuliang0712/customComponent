@@ -1,0 +1,55 @@
+.cart_bottom_view{
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  height: 50px;
+  border-top: 1px solid rgb(240, 240, 240);
+  border-bottom: 1px solid rgb(240, 240, 240); 
+}
+
+/* 选择按钮样式 */
+.select_view{
+  float: left;
+  height: 50px;
+  /* 垂直居中 */  
+  display: flex;
+  justify-content:center;
+  align-items:Center;
+}
+.select_btn{
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+.all_title{
+  font-size: 14px;
+  color: rgb(187, 187, 187);
+}
+
+
+
+.right_view{
+  float: right;
+  height: 50px;
+  /* 垂直居中 */  
+  display: flex;
+  justify-content:center;
+  align-items:Center;
+}
+.settlement_btn{
+  float: right;
+  width: 60px;
+  height: 30px;
+  font-size:14px;
+  line-height: 30px;
+  color: rgb(255, 192, 1);
+  border: 1px solid rgb(255, 192, 1);
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+.settlement_title{
+  font-size: 16px;
+  color: red;
+}

@@ -1,0 +1,121 @@
+/* 自定义组件 */
+.cart_item{
+  border-bottom: 1px solid rgb(240, 240, 240);
+  margin: 10px;
+}
+
+/* 选择按钮和图片 */
+.cart_image_view{
+  float: left;
+  display: flex;
+  /* background-color: chartreuse; */
+  margin-right: 8px;
+}
+
+/* 选择按钮 */
+.cart_left_view{
+  display: flex;
+  justify-content:center;
+  align-items:Center;
+}
+/* 图片 */
+.cart_center_view{
+  justify-content:center;
+  align-items:Center;
+}
+
+/* 商品文字及购买数量 */
+.cart_right_view{
+  width: auto;
+  /* background-color: cadetblue; */
+}
+
+.clear{
+  clear: both;
+}
+
+
+/* 选择按钮样式 */
+.select_view{
+  width: 40px;
+  height: 40px;
+  /* 垂直居中 */  
+  display: flex;
+  justify-content:center;
+  align-items:Center;
+}
+
+.select_btn{
+  width: 20px;
+  height: 20px;
+}
+
+
+/* 图片样式 */
+.good_pic{
+  min-width: 80px;
+  min-height: 80px;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+
+/* 文字样式 */
+.good_title{
+  font-size: 14px;
+  min-height: 60px;
+  justify-content:none;
+  align-items:none;
+}
+
+.good_new_price{
+  font-size: 20px;
+  color: red;
+  line-height: 30px;
+}
+
+.good_old_price{
+  font-size: 13px;
+  color: rgb(187, 187, 187);
+  text-decoration:line-through;
+  line-height: 30px;
+  margin-left: 8px;
+}
+
+.left{
+  float: left;
+}
+
+.right{
+  float: right;
+}
+
+.good_num_view{
+  height: 40px;
+  text-align: right;
+  margin: 0 10px 0 10px;
+}
+
+.good_num_size{
+  width: 25px;
+  height: 25px;
+  margin-top: 8px;
+}
+
+.text_input{
+  margin: 0 5px 0 5px;
+  text-align: center;
+  font-size: 13px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+}
+
+.good_num_title{
+  font-size: 13px;
+  line-height: 40px;
+  margin: 0 10px 0 110px;
+}
